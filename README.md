@@ -10,4 +10,4 @@ are to show you sample outputs from the conversion process.
 You may be able to download all the files in a single ZIP file by
 clicking on "<> Code" above the list of files, then "Download ZIP".
 
-You may be able to see a preview of the HTML file via [this link](https://html-preview.github.io/?url=https://github.com/walkergareth/multiple-formats/blob/main/multiple-formats.html)
+You may be able to see a preview of the HTML file via [this link](https://html-preview.github.io/?url=https://github.com/walkergareth/multiple-formats/blob/main/multiple-formats.html).
