@@ -104,8 +104,22 @@ same \LaTeX\ source, all at the same time. Nice!
 
 \section{Other things}
 
-This section contains some advice on some of the situations which
-might crop up, and some suggestions of what to do.
+This section contains some suggestions on how to deal with some of the
+situations which might crop up, as well as showing you some of the
+things which can be converted.
+
+\subsection{Tables}
+
+Tables are converted.
+\begin{table}[H]
+  \centering
+  \begin{tabular}{l | l l}
+    a & b & c \\\hline
+    1 & 2 & 3 \\
+    2 & 3 & 4
+  \end{tabular}
+  \caption{A table}
+\end{table}
 
 \subsection{Graphics}
 
@@ -129,6 +143,7 @@ the dimensions of the graphics, e.g.
 is more detail on this on
 \href{https://tex.stackexchange.com/a/568853/110494}{StackExchange}.
 
+
 \subsection{Math}
 
 Numbered equations such as
@@ -148,18 +163,6 @@ $h(x)=e^x$.  There are options to convert math into other accessible formats,
 including MathML and MathJax: see the
 \href{https://www.kodymirus.cz/tex4ht-doc/BasicTutorial.html#math-options}{documentation}.
 
-\subsection{Tables}
-
-Tables are converted.
-\begin{table}[H]
-  \centering
-  \begin{tabular}{l | l l}
-    a & b & c \\\hline
-    1 & 2 & 3 \\
-    2 & 3 & 4
-  \end{tabular}
-  \caption{A table}
-\end{table}
 
 \subsection{Phonetic symbols}
 

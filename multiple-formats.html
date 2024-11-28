@@ -32,9 +32,9 @@ to this document are welcome.</div></div>
 <br />   <span class='subsectionToc'>2.3 <a href='#getting-microsoft-word-docx-output' id='QQ2-1-6'>Getting Microsoft Word (DOCX) output</a></span>
 <br />   <span class='subsectionToc'>2.4 <a href='#putting-it-all-together' id='QQ2-1-7'>Putting it all together</a></span>
 <br />   <span class='sectionToc'>3 <a href='#other-things' id='QQ2-1-8'>Other things</a></span>
-<br />   <span class='subsectionToc'>3.1 <a href='#graphics' id='QQ2-1-9'>Graphics</a></span>
-<br />   <span class='subsectionToc'>3.2 <a href='#math' id='QQ2-1-10'>Math</a></span>
-<br />   <span class='subsectionToc'>3.3 <a href='#tables' id='QQ2-1-11'>Tables</a></span>
+<br />   <span class='subsectionToc'>3.1 <a href='#tables' id='QQ2-1-9'>Tables</a></span>
+<br />   <span class='subsectionToc'>3.2 <a href='#graphics' id='QQ2-1-11'>Graphics</a></span>
+<br />   <span class='subsectionToc'>3.3 <a href='#math' id='QQ2-1-12'>Math</a></span>
 <br />   <span class='subsectionToc'>3.4 <a href='#phonetic-symbols' id='QQ2-1-13'>Phonetic symbols</a></span>
 <br />   <span class='subsectionToc'>3.5 <a href='#syntax-trees' id='QQ2-1-14'>Syntax trees</a></span>
 <br />   <span class='subsectionToc'>3.6 <a href='#heading-levels' id='QQ2-1-15'>Heading levels</a></span>
@@ -129,12 +129,27 @@ LaTeX source, all at the same time. Nice!
 </p><!-- l. 105 --><p class='noindent'>
 </p>
    <h3 class='sectionHead' id='other-things'><span class='titlemark'>3   </span> <a id='x1-80003'></a>Other things</h3>
-<!-- l. 107 --><p class='noindent'>This section contains some advice on some of the situations which might crop up, and some
-suggestions of what to do.
-</p><!-- l. 110 --><p class='noindent'>
+<!-- l. 107 --><p class='noindent'>This section contains some suggestions on how to deal with some of the situations which might
+crop up, as well as showing you some of the things which can be converted.
+</p><!-- l. 111 --><p class='noindent'>
 </p>
-   <h4 class='subsectionHead' id='graphics'><span class='titlemark'>3.1   </span> <a id='x1-90003.1'></a>Graphics</h4>
-<!-- l. 112 --><p class='noindent'>You can include graphics like this, optionally specifying a size and alt-text to describe the
+   <h4 class='subsectionHead' id='tables'><span class='titlemark'>3.1   </span> <a id='x1-90003.1'></a>Tables</h4>
+<!-- l. 113 --><p class='noindent'>Tables are converted. </p><div class='table'>
+                                                                                       
+                                                                                       
+<!-- l. 114 --><p class='indent' id='a-table'>   <a id='x1-9001r1'></a></p><figure class='float'>
+                                                                                       
+                                                                                       
+<div class='tabular'> <table class='tabular' id='TBL-2'><colgroup id='TBL-2-1g'><col id='TBL-2-1' /></colgroup><colgroup id='TBL-2-2g'><col id='TBL-2-2' /><col id='TBL-2-3' /></colgroup><tr id='TBL-2-1-' style='vertical-align:baseline;'><td class='td11' id='TBL-2-1-1' style='white-space:nowrap; text-align:left;'> a </td><td class='td11' id='TBL-2-1-2' style='white-space:nowrap; text-align:left;'> b  </td><td class='td11' id='TBL-2-1-3' style='white-space:nowrap; text-align:left;'> c  </td>
+</tr><tr class='hline'><td></td><td></td><td></td></tr><tr id='TBL-2-2-' style='vertical-align:baseline;'><td class='td11' id='TBL-2-2-1' style='white-space:nowrap; text-align:left;'> 1  </td><td class='td11' id='TBL-2-2-2' style='white-space:nowrap; text-align:left;'> 2  </td><td class='td11' id='TBL-2-2-3' style='white-space:nowrap; text-align:left;'> 3  </td>
+</tr><tr id='TBL-2-3-' style='vertical-align:baseline;'><td class='td11' id='TBL-2-3-1' style='white-space:nowrap; text-align:left;'> 2  </td><td class='td11' id='TBL-2-3-2' style='white-space:nowrap; text-align:left;'> 3  </td><td class='td11' id='TBL-2-3-3' style='white-space:nowrap; text-align:left;'> 4  </td></tr></table>                                                                     </div>
+<figcaption class='caption'><span class='id'>Table 1: </span><span class='content'>A table</span></figcaption><!-- tex4ht:label?: x1-9001r1  -->
+                                                                                       
+                                                                                       
+   </figure>
+   </div>
+   <h4 class='subsectionHead' id='graphics'><span class='titlemark'>3.2   </span> <a id='x1-100003.2'></a>Graphics</h4>
+<!-- l. 126 --><p class='noindent'>You can include graphics like this, optionally specifying a size and alt-text to describe the
 image:
                                                                                        
                                                                                        
@@ -142,9 +157,9 @@ image:
    <pre class='verbatim' id='verbatim-6'>
 \includegraphics[alt={a colour picture of a tiger},width=3cm]{tiger}
 </pre>
-<!-- l. 116 --><p class='nopar'> <img alt='a colour picture of a tiger' height='89' src='tiger-.png' width='85' /><br class='newline' />The alt-text will be preserved in the HTML and ODT versions, but seems to be lost when
+<!-- l. 130 --><p class='nopar'> <img alt='a colour picture of a tiger' height='89' src='tiger-.png' width='85' /><br class='newline' />The alt-text will be preserved in the HTML and ODT versions, but seems to be lost when
 converting to DOCX from LibreOffice.
-</p><!-- l. 121 --><p class='indent'>   To get the image size you want in the ODT and DOCX file, you may need to do a bit of
+</p><!-- l. 135 --><p class='indent'>   To get the image size you want in the ODT and DOCX file, you may need to do a bit of
 work. One thing you can do is use the <span class='obeylines-h'><code class='verb'>ebb</code></span> command from the command line to create a special
 file which contains the dimensions of the graphics, e.g.
                                                                                        
@@ -153,12 +168,12 @@ file which contains the dimensions of the graphics, e.g.
    <pre class='verbatim' id='verbatim-7'>
   ebb -x tiger.pdf
 </pre>
-<!-- l. 127 --><p class='nopar'> (This works on other types of graphics as well, not just PDF.) There is more detail on this on
+<!-- l. 141 --><p class='nopar'> (This works on other types of graphics as well, not just PDF.) There is more detail on this on
 <a href='https://tex.stackexchange.com/a/568853/110494'>StackExchange</a>.
-</p><!-- l. 132 --><p class='noindent'>
+</p><!-- l. 147 --><p class='noindent'>
 </p>
-   <h4 class='subsectionHead' id='math'><span class='titlemark'>3.2   </span> <a id='x1-100003.2'></a>Math</h4>
-<!-- l. 134 --><p class='noindent'>Numbered equations such as
+   <h4 class='subsectionHead' id='math'><span class='titlemark'>3.3   </span> <a id='x1-110003.3'></a>Math</h4>
+<!-- l. 149 --><p class='noindent'>Numbered equations such as
                                                                                        
                                                                                        
 </p>
@@ -167,38 +182,23 @@ file which contains the dimensions of the graphics, e.g.
 \sum_{k=1}^5(k^2+2) = (1^2+2)+(2^2+2)+(3^2+2)+(4^2+2)+(5^2+2)
 \end{equation}
 </pre>
-<!-- l. 139 --><p class='nopar'> can be converted to graphics:
+<!-- l. 154 --><p class='nopar'> can be converted to graphics:
 </p>
    <table class='equation'><tr><td>
    <div class='math-display'>
 <img alt='∑5
    (k2 + 2) = (12 + 2) + (22 + 2) + (32 + 2) + (42 + 2) + (52 + 2)
 k=1
-' class='math-display' src='multiple-formats0x.png' /><a id='x1-10001r1'></a></div>
+' class='math-display' src='multiple-formats0x.png' /><a id='x1-11001r1'></a></div>
    </td><td class='equation-label'>(1)</td></tr></table>
-<!-- l. 143 --><p class='nopar'>The graphics will have alt-text generated automatically.
-</p><!-- l. 146 --><p class='indent'>   Inline math (e.g. <span class='obeylines-h'><code class='verb'>$h(x)=e^x$</code></span>) can appear in the text: <span class='cmmi-12'>h</span>(<span class='cmmi-12'>x</span>) = <span class='cmmi-12'>e</span><sup><span class='cmmi-8'>x</span></sup>. There are options to
+<!-- l. 158 --><p class='nopar'>The graphics will have alt-text generated automatically.
+</p><!-- l. 161 --><p class='indent'>   Inline math (e.g. <span class='obeylines-h'><code class='verb'>$h(x)=e^x$</code></span>) can appear in the text: <span class='cmmi-12'>h</span>(<span class='cmmi-12'>x</span>) = <span class='cmmi-12'>e</span><sup><span class='cmmi-8'>x</span></sup>. There are options to
 convert math into other accessible formats, including MathML and MathJax: see the
 <a href='https://www.kodymirus.cz/tex4ht-doc/BasicTutorial.html#math-options'>documentation</a>.
-</p><!-- l. 151 --><p class='noindent'>
+</p><!-- l. 167 --><p class='noindent'>
 </p>
-   <h4 class='subsectionHead' id='tables'><span class='titlemark'>3.3   </span> <a id='x1-110003.3'></a>Tables</h4>
-<!-- l. 153 --><p class='noindent'>Tables are converted. </p><div class='table'>
-                                                                                       
-                                                                                       
-<!-- l. 154 --><p class='indent' id='a-table'>   <a id='x1-11001r1'></a></p><figure class='float'>
-                                                                                       
-                                                                                       
-<div class='tabular'> <table class='tabular' id='TBL-2'><colgroup id='TBL-2-1g'><col id='TBL-2-1' /></colgroup><colgroup id='TBL-2-2g'><col id='TBL-2-2' /><col id='TBL-2-3' /></colgroup><tr id='TBL-2-1-' style='vertical-align:baseline;'><td class='td11' id='TBL-2-1-1' style='white-space:nowrap; text-align:left;'> a </td><td class='td11' id='TBL-2-1-2' style='white-space:nowrap; text-align:left;'> b  </td><td class='td11' id='TBL-2-1-3' style='white-space:nowrap; text-align:left;'> c  </td>
-</tr><tr class='hline'><td></td><td></td><td></td></tr><tr id='TBL-2-2-' style='vertical-align:baseline;'><td class='td11' id='TBL-2-2-1' style='white-space:nowrap; text-align:left;'> 1  </td><td class='td11' id='TBL-2-2-2' style='white-space:nowrap; text-align:left;'> 2  </td><td class='td11' id='TBL-2-2-3' style='white-space:nowrap; text-align:left;'> 3  </td>
-</tr><tr id='TBL-2-3-' style='vertical-align:baseline;'><td class='td11' id='TBL-2-3-1' style='white-space:nowrap; text-align:left;'> 2  </td><td class='td11' id='TBL-2-3-2' style='white-space:nowrap; text-align:left;'> 3  </td><td class='td11' id='TBL-2-3-3' style='white-space:nowrap; text-align:left;'> 4  </td></tr></table>                                                                     </div>
-<figcaption class='caption'><span class='id'>Table 1: </span><span class='content'>A table</span></figcaption><!-- tex4ht:label?: x1-11001r1  -->
-                                                                                       
-                                                                                       
-   </figure>
-   </div>
    <h4 class='subsectionHead' id='phonetic-symbols'><span class='titlemark'>3.4   </span> <a id='x1-120003.4'></a>Phonetic symbols</h4>
-<!-- l. 166 --><p class='noindent'>Phonetic symbols seem to convert fine when done something like this:
+<!-- l. 169 --><p class='noindent'>Phonetic symbols seem to convert fine when done something like this:
                                                                                        
                                                                                        
 </p>
@@ -213,7 +213,7 @@ This is a test
 This is a test
 \end{document}
 </pre>
-<!-- l. 177 --><p class='nopar'> Since you need X  E LaTeX or LuaTeX to use the <span class='obeylines-h'><code class='verb'>fontspec</code></span> package, to do the conversion to
+<!-- l. 180 --><p class='nopar'> Since you need X  E LaTeX or LuaTeX to use the <span class='obeylines-h'><code class='verb'>fontspec</code></span> package, to do the conversion to
 conversion you need e.g.
                                                                                        
                                                                                        
@@ -221,19 +221,19 @@ conversion you need e.g.
    <pre class='verbatim' id='verbatim-10'>
 make4ht -x file.tex
 </pre>
-<!-- l. 182 --><p class='nopar'> and for ODT output e.g.
+<!-- l. 185 --><p class='nopar'> and for ODT output e.g.
                                                                                        
                                                                                        
 </p>
    <pre class='verbatim' id='verbatim-11'>
 make4ht -x -f odt file.tex
 </pre>
-<!-- l. 186 --><p class='nopar'> A DOCX file can be created from the ODT file using LibreOffice in the same way as described
+<!-- l. 189 --><p class='nopar'> A DOCX file can be created from the ODT file using LibreOffice in the same way as described
 in section <a href='#getting-microsoft-word-docx-output'>2.3<!-- tex4ht:ref: msword  --></a>.
-</p><!-- l. 190 --><p class='noindent'>
+</p><!-- l. 193 --><p class='noindent'>
 </p>
    <h4 class='subsectionHead' id='syntax-trees'><span class='titlemark'>3.5   </span> <a id='x1-130003.5'></a>Syntax trees</h4>
-<!-- l. 192 --><p class='noindent'>This is a document showing a syntax tree using the qtree package:
+<!-- l. 195 --><p class='noindent'>This is a document showing a syntax tree using the qtree package:
                                                                                        
                                                                                        
 </p>
@@ -249,22 +249,22 @@ This is a tree.
 writing ] \qroof{a book}.DP ]]]]]]
 \end{document}
 </pre>
-<!-- l. 204 --><p class='nopar'> The conversion to HTML seems robust, e.g.
+<!-- l. 207 --><p class='nopar'> The conversion to HTML seems robust, e.g.
                                                                                        
                                                                                        
 </p>
    <pre class='verbatim' id='verbatim-13'>
 make4ht tree.tex "svg"
 </pre>
-<!-- l. 208 --><p class='nopar'> The “svg” switch to get graphics in the SVG format seems to be required in order to preserve
+<!-- l. 211 --><p class='nopar'> The “svg” switch to get graphics in the SVG format seems to be required in order to preserve
 the lines in the graphic representing branches.
-</p><!-- l. 213 --><p class='indent'>   To create a ODT or DOCX version, you can open the HTML file in LibreOffice, then save
+</p><!-- l. 216 --><p class='indent'>   To create a ODT or DOCX version, you can open the HTML file in LibreOffice, then save
 it in those other formats. The size of the graphics in the final files may need to be
 adjusted.
-</p><!-- l. 217 --><p class='noindent'>
+</p><!-- l. 220 --><p class='noindent'>
 </p>
    <h4 class='subsectionHead' id='heading-levels'><span class='titlemark'>3.6   </span> <a id='x1-140003.6'></a>Heading levels</h4>
-<!-- l. 219 --><p class='noindent'>You can change the style formatting to start at e.g. “Heading 1” by using a configuration file
+<!-- l. 222 --><p class='noindent'>You can change the style formatting to start at e.g. “Heading 1” by using a configuration file
 like this:
                                                                                        
                                                                                        
@@ -277,22 +277,22 @@ like this:
 \begin{document}
 \EndPreamble
 </pre>
-<!-- l. 228 --><p class='nopar'> If you save the configuration file as <span class='obeylines-h'><code class='verb'>heading.cfg</code></span> you can then do e.g.
+<!-- l. 231 --><p class='nopar'> If you save the configuration file as <span class='obeylines-h'><code class='verb'>heading.cfg</code></span> you can then do e.g.
                                                                                        
                                                                                        
 </p>
    <pre class='verbatim' id='verbatim-15'>
 make4ht -f odt -c heading.cfg file.tex
 </pre>
-<!-- l. 232 --><p class='nopar'>
-</p><!-- l. 234 --><p class='noindent'>
+<!-- l. 235 --><p class='nopar'>
+</p><!-- l. 237 --><p class='noindent'>
 </p>
    <h4 class='subsectionHead' id='creating-zip-files-of-html-versions'><span class='titlemark'>3.7   </span> <a id='x1-150003.7'></a>Creating ZIP files of HTML versions</h4>
-<!-- l. 236 --><p class='noindent'>There is some information about this on  <a href='https://tex.stackexchange.com/q/656496/110494'>StackExchange</a>.
-</p><!-- l. 238 --><p class='noindent'>
+<!-- l. 239 --><p class='noindent'>There is some information about this on  <a href='https://tex.stackexchange.com/q/656496/110494'>StackExchange</a>.
+</p><!-- l. 241 --><p class='noindent'>
 </p>
    <h4 class='subsectionHead' id='putting-html-versions-of-documents-on-blackboard'><span class='titlemark'>3.8   </span> <a id='x1-160003.8'></a>Putting HTML versions of documents on Blackboard</h4>
-<!-- l. 240 --><p class='noindent'>Make a ZIP file of all the files you need to make available (e.g. the HTML file, CSS file, any
+<!-- l. 243 --><p class='noindent'>Make a ZIP file of all the files you need to make available (e.g. the HTML file, CSS file, any
 graphics). Upload your ZIP files to the content collection as a package, so that it unzips once
 uploaded. You then have to give all the files the correct permissions. In the content collection,
 find the folder you want to make available. Click on the ‘permissions’ icon for that folder. That
