@@ -213,20 +213,20 @@ This is a test
 This is a test
 \end{document}
 </pre>
-<!-- l. 180 --><p class='nopar'> Since you need X  E LaTeX or LuaTeX to use the <span class='obeylines-h'><code class='verb'>fontspec</code></span> package, to do the conversion to
+<!-- l. 180 --><p class='nopar'> Since you need XeLaTeX or LuaTeX to use the <span class='obeylines-h'><code class='verb'>fontspec</code></span> package, to do the conversion to
 conversion you need e.g.
                                                                                        
                                                                                        
 </p>
    <pre class='verbatim' id='verbatim-10'>
-make4ht -x file.tex
+make4ht -l file.tex
 </pre>
 <!-- l. 185 --><p class='nopar'> and for ODT output e.g.
                                                                                        
                                                                                        
 </p>
    <pre class='verbatim' id='verbatim-11'>
-make4ht -x -f odt file.tex
+make4ht -l -f odt file.tex
 </pre>
 <!-- l. 189 --><p class='nopar'> A DOCX file can be created from the ODT file using LibreOffice in the same way as described
 in section <a href='#getting-microsoft-word-docx-output'>2.3<!-- tex4ht:ref: msword  --></a>.
