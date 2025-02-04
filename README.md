@@ -4,9 +4,10 @@ The files in this folder are intended to help people looking to
 produce multiple output formats, including editable formats, from a
 single LaTeX source file.
 
-You probably want to start by looking at the PDF file; the other files
-are to show you sample outputs from the conversion process. You may be
-able to see a preview of the HTML file via [this
+You probably want to start by looking at the PDF file (download the
+PDF and open it if you want to preserve the hyperlinks); the other
+files are to show you sample outputs from the conversion process. You
+may be able to see a preview of the HTML file via [this
 link](https://html-preview.github.io/?url=https://github.com/walkergareth/multiple-formats/blob/main/multiple-formats.html).
 
 You may be able to download all the files in a single ZIP file by
