@@ -1,5 +1,5 @@
 %% multiple-formats.tex
-%% Copyright 2024 Gareth Walker
+%% Copyright 2025 Gareth Walker
 %
 % This work may be distributed and/or modified under the
 % conditions of the LaTeX Project Public License, either version 1.3
@@ -20,14 +20,12 @@
 \title{Multiple output formats from the same \LaTeX\ source\thanks{The
     information in this document is offered in good faith and I hope
     that others find it helpful.  Much of it has come, directly or
-    indirectly, from the author of the make4ht tool, Michal
-    Hoftich. I've taken math snippets from
-    \href{https://euclid.colorado.edu/~hilljb/latex/intro.to.latex.tex}{this
-      intro to writing math with \LaTeX}.  There are absolutely no
-    guarantees as to whether, and how well, these tools will work in
-    your case. I am not the author of any of the tools referred to in
-    this document.  Corrections and improvements to this document are
-    welcome.}}  \author{Gareth Walker}
+    indirectly, from the author of the make4ht tool, Michal Hoftich.
+    There are absolutely no guarantees as to whether, and how well,
+    these tools will work in your case. I am not the author of any of
+    the tools referred to in this document.  Corrections and
+    improvements to this document are welcome.}}  \author{Gareth
+  Walker}
 \maketitle
 \tableofcontents
 
@@ -76,7 +74,7 @@ use ``Save as...'' to save the file in DOCX format.  If you are able
 to call LibreOffice from the command line (terminal) on your system,
 you may be able to do the conversion that way, something like this:
 \begin{verbatim}
-libreoffice7.5 --convert-to docx multiple-formats.odt
+libreoffice24.2 --convert-to docx multiple-formats.odt
 \end{verbatim}
 
 \subsection{Putting it all together}
@@ -149,18 +147,19 @@ is more detail on this on
 Numbered equations such as
 \begin{verbatim}
 \begin{equation}
-\sum_{k=1}^5(k^2+2) = (1^2+2)+(2^2+2)+(3^2+2)+(4^2+2)+(5^2+2)
+4x^2+\frac{3}{2}x-15=0
 \end{equation}
 \end{verbatim}
 can be converted to graphics:
 \begin{equation}
-\sum_{k=1}^5(k^2+2) = (1^2+2)+(2^2+2)+(3^2+2)+(4^2+2)+(5^2+2)
+4x^2+\frac{3}{2}x-15=0
+%  \sum_{k=1}^5(k^2+2) = (1^2+2)+(2^2+2)+(3^2+2)+(4^2+2)+(5^2+2)
 \end{equation}
 The graphics will have alt-text generated automatically.
 
-Inline math (e.g. \verb!$h(x)=e^x$!) can appear in the text:
-$h(x)=e^x$.  There are options to convert math into other accessible formats,
-including MathML and MathJax: see the
+Inline math (e.g. \verb!$sin^2x+cos^2x\equiv1$!) can appear in the
+text: $sin^2x+cos^2x\equiv1$. There are options to convert math into
+other accessible formats, including MathML and MathJax: see the
 \href{https://www.kodymirus.cz/tex4ht-doc/BasicTutorial.html#math-options}{documentation}.
 
 
@@ -192,17 +191,18 @@ same way as described in section~\ref{msword}.
 
 \subsection{Syntax trees}
 
-This is a document showing a syntax tree using the qtree package:
+This is a document showing a syntax tree using the qtree package, from the \href{http://mirrors.ctan.org/macros/latex/contrib/qtree/qtreenotes.pdf}{qtree documentation}:
 \begin{verbatim}
 \documentclass{article}
 \usepackage{qtree}
 \usepackage{ulem}
 \begin{document}
 This is a tree.
-\Tree[.TP\qroof{Valentine}.DP\textit{\begin{scriptsize}i\end{scriptsize}}
-[.T' [.T [.V be ] [.T -ed ]] [.VP [.V' [.\sout{V} ][.VP
-[.\sout{DP}\textit{\begin{scriptsize}i\end{scriptsize}} ][.V' [.V
-writing ] \qroof{a book}.DP ]]]]]]
+
+\Tree
+[.IP [ Roses ].NP_i [.I\1 [ are ].I\0
+[.VP t_i [ [ going ].V\0 \qroof{out of style}.PP ].V\1 ].VP
+].I\1 ]
 \end{document}
 \end{verbatim}
 The conversion to HTML seems robust, e.g.

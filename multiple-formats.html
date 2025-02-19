@@ -16,13 +16,13 @@
 <h2 class='titleHead'>Multiple output formats from the same
 LaTeX source<span class='thank-mark'><a href='#tk-1'>∗</a></span></h2>
  <div class='author'><span class='cmr-12x-x-120'>Gareth Walker</span></div><br />
-<div class='date'><span class='cmr-12x-x-120'>November 28, 2024</span></div>
-   <div class='thanks'><br /><a id='tk-1'></a><span class='thank-mark'><span class='tcrm-1200'>∗</span></span>The information in this document is offered in good faith and I hope that others find it
-helpful. Much of it has come, directly or indirectly, from the author of the make4ht tool, Michal
-Hoftich. I’ve taken math snippets from  <a href='https://euclid.colorado.edu/~hilljb/latex/intro.to.latex.tex'>this intro to writing math with LaTeX</a>. There are
-absolutely no guarantees as to whether, and how well, these tools will work in your case. I am
-not the author of any of the tools referred to in this document. Corrections and improvements
-to this document are welcome.</div></div>
+<div class='date'><span class='cmr-12x-x-120'>February 19, 2025</span></div>
+   <div class='thanks'><br /><a id='tk-1'></a><span class='thank-mark'><span class='tcrm-1200'>∗</span></span>The information in this document is offered in good faith and I hope that others
+find it helpful. Much of it has come, directly or indirectly, from the author of the
+make4ht tool, Michal Hoftich. There are absolutely no guarantees as to whether, and
+how well, these tools will work in your case. I am not the author of any of the tools
+referred to in this document. Corrections and improvements to this document are
+welcome.</div></div>
    <h3 class='likesectionHead' id='contents'><a id='x1-1000'></a>Contents</h3>
    <div class='tableofcontents'>
    <span class='sectionToc'>1 <a href='#introduction' id='QQ2-1-2'>Introduction</a></span>
@@ -41,12 +41,12 @@ to this document are welcome.</div></div>
 <br />   <span class='subsectionToc'>3.7 <a href='#creating-zip-files-of-html-versions' id='QQ2-1-16'>Creating ZIP files of HTML versions</a></span>
 <br />   <span class='subsectionToc'>3.8 <a href='#putting-html-versions-of-documents-on-blackboard' id='QQ2-1-17'>Putting HTML versions of documents on Blackboard</a></span>
    </div>
-<!-- l. 34 --><p class='noindent'>
+<!-- l. 32 --><p class='noindent'>
 </p>
    <h3 class='sectionHead' id='introduction'><span class='titlemark'>1   </span> <a id='x1-20001'></a>Introduction</h3>
                                                                                        
                                                                                        
-<!-- l. 36 --><p class='noindent'>There are times when it can be useful to use the same LaTeX source code and produce multiple
+<!-- l. 34 --><p class='noindent'>There are times when it can be useful to use the same LaTeX source code and produce multiple
 output formats. One such case is where you are preparing materials for students and you want
 them to have, for example, a PDF ‘reference’ version but would also like them to have the same
 materials in HTML format and in formats they can use in LibreOffice (ODT) and in Microsoft
@@ -55,39 +55,39 @@ currently looking at an output file in PDF, HTML, ODT, or DOCX format <span clas
 originated from the same single LaTeX source file</span>. So as well as documenting the
 process of conversion, this file functions as an example of the output which can be
 produced.
-</p><!-- l. 48 --><p class='noindent'>
+</p><!-- l. 46 --><p class='noindent'>
 </p>
    <h3 class='sectionHead' id='the-main-tool-makeht'><span class='titlemark'>2   </span> <a id='x1-30002'></a>The main tool: make4ht</h3>
-<!-- l. 50 --><p class='noindent'>The main tool in the conversion process described here is Michal Hoftich’s excellent  <a href='https://ctan.org/pkg/make4ht'>make4ht</a>
+<!-- l. 48 --><p class='noindent'>The main tool in the conversion process described here is Michal Hoftich’s excellent  <a href='https://ctan.org/pkg/make4ht'>make4ht</a>
 tool (and the related  <a href='https://ctan.org/pkg/tex4ht'>tex4ht</a> package). So, install those things if you don’t already have them.
 There is  <a href='https://www.kodymirus.cz/tex4ht-doc/tex4ht-doc.html'>quite extensive documentation</a> if you need it, but this document should help you get
 started.
-</p><!-- l. 58 --><p class='noindent'>
+</p><!-- l. 56 --><p class='noindent'>
 </p>
    <h4 class='subsectionHead' id='getting-html-output'><span class='titlemark'>2.1   </span> <a id='x1-40002.1'></a>Getting HTML output</h4>
-<!-- l. 60 --><p class='noindent'>This is as simple as doing this from the command line:
+<!-- l. 58 --><p class='noindent'>This is as simple as doing this from the command line:
                                                                                        
                                                                                        
 </p>
    <pre class='verbatim' id='verbatim-1'>
 make4ht multiple-formats.tex
 </pre>
-<!-- l. 63 --><p class='nopar'>
-</p><!-- l. 65 --><p class='noindent'>
+<!-- l. 61 --><p class='nopar'>
+</p><!-- l. 63 --><p class='noindent'>
 </p>
    <h4 class='subsectionHead' id='getting-libreoffice-odt-output'><span class='titlemark'>2.2   </span> <a id='x1-50002.2'></a>Getting LibreOffice (ODT) output</h4>
-<!-- l. 67 --><p class='noindent'>You can do this from the command line:
+<!-- l. 65 --><p class='noindent'>You can do this from the command line:
                                                                                        
                                                                                        
 </p>
    <pre class='verbatim' id='verbatim-2'>
 make4ht -f odt multiple-formats.tex
 </pre>
-<!-- l. 70 --><p class='nopar'>
-</p><!-- l. 72 --><p class='noindent'>
+<!-- l. 68 --><p class='nopar'>
+</p><!-- l. 70 --><p class='noindent'>
 </p>
    <h4 class='subsectionHead' id='getting-microsoft-word-docx-output'><span class='titlemark'>2.3   </span> <a id='x1-60002.3'></a>Getting Microsoft Word (DOCX) output</h4>
-<!-- l. 74 --><p class='noindent'>Once you have the ODT file, you can open the file in LibreOffice and use “Save as...” to save
+<!-- l. 72 --><p class='noindent'>Once you have the ODT file, you can open the file in LibreOffice and use “Save as...” to save
 the file in DOCX format. If you are able to call LibreOffice from the command line
 (terminal) on your system, you may be able to do the conversion that way, something like
 this:
@@ -95,13 +95,13 @@ this:
                                                                                        
 </p>
    <pre class='verbatim' id='verbatim-3'>
-libreoffice7.5 --convert-to docx multiple-formats.odt
+libreoffice24.2 --convert-to docx multiple-formats.odt
 </pre>
-<!-- l. 80 --><p class='nopar'>
-</p><!-- l. 82 --><p class='noindent'>
+<!-- l. 78 --><p class='nopar'>
+</p><!-- l. 80 --><p class='noindent'>
 </p>
    <h4 class='subsectionHead' id='putting-it-all-together'><span class='titlemark'>2.4   </span> <a id='x1-70002.4'></a>Putting it all together</h4>
-<!-- l. 84 --><p class='noindent'>Depending on your system, you may be able to put all these steps together in a shell script so
+<!-- l. 82 --><p class='noindent'>Depending on your system, you may be able to put all these steps together in a shell script so
 that running that shell script on a file generates some or all of the output formats (PDF,
 HTML, ODT, DOCX). On my system (Ubuntu Linux) I can have a bash script like
 this:
@@ -116,7 +116,7 @@ make4ht $fileName
 make4ht -f odt $fileName
 libreoffice7.5 --convert-to docx $fileName.odt
 </pre>
-<!-- l. 95 --><p class='nopar'> If I save this as <span class='obeylines-h'><code class='verb'>makeMultipleFormats</code></span>, make that file executable, and possibly put it
+<!-- l. 93 --><p class='nopar'> If I save this as <span class='obeylines-h'><code class='verb'>makeMultipleFormats</code></span>, make that file executable, and possibly put it
 somewhere in my system’s path, I can then run this command:
                                                                                        
                                                                                        
@@ -124,20 +124,20 @@ somewhere in my system’s path, I can then run this command:
    <pre class='verbatim' id='verbatim-5'>
 makeMultipleFormats multiple-formats.tex
 </pre>
-<!-- l. 101 --><p class='nopar'> That single command gets me PDF, HTML, ODT and DOCX versions of the same
+<!-- l. 99 --><p class='nopar'> That single command gets me PDF, HTML, ODT and DOCX versions of the same
 LaTeX source, all at the same time. Nice!
-</p><!-- l. 105 --><p class='noindent'>
+</p><!-- l. 103 --><p class='noindent'>
 </p>
    <h3 class='sectionHead' id='other-things'><span class='titlemark'>3   </span> <a id='x1-80003'></a>Other things</h3>
-<!-- l. 107 --><p class='noindent'>This section contains some suggestions on how to deal with some of the situations which might
+<!-- l. 105 --><p class='noindent'>This section contains some suggestions on how to deal with some of the situations which might
 crop up, as well as showing you some of the things which can be converted.
-</p><!-- l. 111 --><p class='noindent'>
+</p><!-- l. 109 --><p class='noindent'>
 </p>
    <h4 class='subsectionHead' id='tables'><span class='titlemark'>3.1   </span> <a id='x1-90003.1'></a>Tables</h4>
-<!-- l. 113 --><p class='noindent'>Tables are converted. </p><div class='table'>
+<!-- l. 111 --><p class='noindent'>Tables are converted. </p><div class='table'>
                                                                                        
                                                                                        
-<!-- l. 114 --><p class='indent' id='a-table'>   <a id='x1-9001r1'></a></p><figure class='float'>
+<!-- l. 112 --><p class='indent' id='a-table'>   <a id='x1-9001r1'></a></p><figure class='float'>
                                                                                        
                                                                                        
 <div class='tabular'> <table class='tabular' id='TBL-2'><colgroup id='TBL-2-1g'><col id='TBL-2-1' /></colgroup><colgroup id='TBL-2-2g'><col id='TBL-2-2' /><col id='TBL-2-3' /></colgroup><tr id='TBL-2-1-' style='vertical-align:baseline;'><td class='td11' id='TBL-2-1-1' style='white-space:nowrap; text-align:left;'> a </td><td class='td11' id='TBL-2-1-2' style='white-space:nowrap; text-align:left;'> b  </td><td class='td11' id='TBL-2-1-3' style='white-space:nowrap; text-align:left;'> c  </td>
@@ -149,7 +149,7 @@ crop up, as well as showing you some of the things which can be converted.
    </figure>
    </div>
    <h4 class='subsectionHead' id='graphics'><span class='titlemark'>3.2   </span> <a id='x1-100003.2'></a>Graphics</h4>
-<!-- l. 126 --><p class='noindent'>You can include graphics like this, optionally specifying a size and alt-text to describe the
+<!-- l. 124 --><p class='noindent'>You can include graphics like this, optionally specifying a size and alt-text to describe the
 image:
                                                                                        
                                                                                        
@@ -157,9 +157,9 @@ image:
    <pre class='verbatim' id='verbatim-6'>
 \includegraphics[alt={a colour picture of a tiger},width=3cm]{tiger}
 </pre>
-<!-- l. 130 --><p class='nopar'> <img alt='a colour picture of a tiger' height='89' src='tiger-.png' width='85' /><br class='newline' />The alt-text will be preserved in the HTML and ODT versions, but seems to be lost when
+<!-- l. 128 --><p class='nopar'> <img alt='a colour picture of a tiger' height='89' src='tiger-.png' width='85' /><br class='newline' />The alt-text will be preserved in the HTML and ODT versions, but seems to be lost when
 converting to DOCX from LibreOffice.
-</p><!-- l. 135 --><p class='indent'>   To get the image size you want in the ODT and DOCX file, you may need to do a bit of
+</p><!-- l. 133 --><p class='indent'>   To get the image size you want in the ODT and DOCX file, you may need to do a bit of
 work. One thing you can do is use the <span class='obeylines-h'><code class='verb'>ebb</code></span> command from the command line to create a special
 file which contains the dimensions of the graphics, e.g.
                                                                                        
@@ -168,37 +168,36 @@ file which contains the dimensions of the graphics, e.g.
    <pre class='verbatim' id='verbatim-7'>
   ebb -x tiger.pdf
 </pre>
-<!-- l. 141 --><p class='nopar'> (This works on other types of graphics as well, not just PDF.) There is more detail on this on
+<!-- l. 139 --><p class='nopar'> (This works on other types of graphics as well, not just PDF.) There is more detail on this on
 <a href='https://tex.stackexchange.com/a/568853/110494'>StackExchange</a>.
-</p><!-- l. 147 --><p class='noindent'>
+</p><!-- l. 145 --><p class='noindent'>
 </p>
    <h4 class='subsectionHead' id='math'><span class='titlemark'>3.3   </span> <a id='x1-110003.3'></a>Math</h4>
-<!-- l. 149 --><p class='noindent'>Numbered equations such as
+<!-- l. 147 --><p class='noindent'>Numbered equations such as
                                                                                        
                                                                                        
 </p>
    <pre class='verbatim' id='verbatim-8'>
 \begin{equation}
-\sum_{k=1}^5(k^2+2) = (1^2+2)+(2^2+2)+(3^2+2)+(4^2+2)+(5^2+2)
+4x^2+\frac{3}{2}x-15=0
 \end{equation}
 </pre>
-<!-- l. 154 --><p class='nopar'> can be converted to graphics:
+<!-- l. 152 --><p class='nopar'> can be converted to graphics:
 </p>
    <table class='equation'><tr><td>
    <div class='math-display'>
-<img alt='∑5
-   (k2 + 2) = (12 + 2) + (22 + 2) + (32 + 2) + (42 + 2) + (52 + 2)
-k=1
+<img alt='   2  3-
+4x  + 2 x − 15 = 0
 ' class='math-display' src='multiple-formats0x.png' /><a id='x1-11001r1'></a></div>
    </td><td class='equation-label'>(1)</td></tr></table>
-<!-- l. 158 --><p class='nopar'>The graphics will have alt-text generated automatically.
-</p><!-- l. 161 --><p class='indent'>   Inline math (e.g. <span class='obeylines-h'><code class='verb'>$h(x)=e^x$</code></span>) can appear in the text: <span class='cmmi-12'>h</span>(<span class='cmmi-12'>x</span>) = <span class='cmmi-12'>e</span><sup><span class='cmmi-8'>x</span></sup>. There are options to
-convert math into other accessible formats, including MathML and MathJax: see the
-<a href='https://www.kodymirus.cz/tex4ht-doc/BasicTutorial.html#math-options'>documentation</a>.
-</p><!-- l. 167 --><p class='noindent'>
+<!-- l. 157 --><p class='nopar'>The graphics will have alt-text generated automatically.
+</p><!-- l. 160 --><p class='indent'>   Inline math (e.g. <span class='obeylines-h'><code class='verb'>$sin^2x+cos^2x\equiv1$</code></span>) can appear in the text: <span class='cmmi-12'>sin</span><sup><span class='cmr-8'>2</span></sup><span class='cmmi-12'>x </span>+ <span class='cmmi-12'>cos</span><sup><span class='cmr-8'>2</span></sup><span class='cmmi-12'>x </span><span class='cmsy-10x-x-120'>≡ </span>1.
+There are options to convert math into other accessible formats, including MathML and
+MathJax: see the  <a href='https://www.kodymirus.cz/tex4ht-doc/BasicTutorial.html#math-options'>documentation</a>.
+</p><!-- l. 166 --><p class='noindent'>
 </p>
    <h4 class='subsectionHead' id='phonetic-symbols'><span class='titlemark'>3.4   </span> <a id='x1-120003.4'></a>Phonetic symbols</h4>
-<!-- l. 169 --><p class='noindent'>Phonetic symbols seem to convert fine when done something like this:
+<!-- l. 168 --><p class='noindent'>Phonetic symbols seem to convert fine when done something like this:
                                                                                        
                                                                                        
 </p>
@@ -213,7 +212,7 @@ This is a test
 This is a test
 \end{document}
 </pre>
-<!-- l. 180 --><p class='nopar'> Since you need XeLaTeX or LuaTeX to use the <span class='obeylines-h'><code class='verb'>fontspec</code></span> package, to do the conversion to
+<!-- l. 179 --><p class='nopar'> Since you need XeLaTeX or LuaTeX to use the <span class='obeylines-h'><code class='verb'>fontspec</code></span> package, to do the conversion to
 conversion you need e.g.
                                                                                        
                                                                                        
@@ -221,19 +220,20 @@ conversion you need e.g.
    <pre class='verbatim' id='verbatim-10'>
 make4ht -l file.tex
 </pre>
-<!-- l. 185 --><p class='nopar'> and for ODT output e.g.
+<!-- l. 184 --><p class='nopar'> and for ODT output e.g.
                                                                                        
                                                                                        
 </p>
    <pre class='verbatim' id='verbatim-11'>
 make4ht -l -f odt file.tex
 </pre>
-<!-- l. 189 --><p class='nopar'> A DOCX file can be created from the ODT file using LibreOffice in the same way as described
+<!-- l. 188 --><p class='nopar'> A DOCX file can be created from the ODT file using LibreOffice in the same way as described
 in section <a href='#getting-microsoft-word-docx-output'>2.3<!-- tex4ht:ref: msword  --></a>.
-</p><!-- l. 193 --><p class='noindent'>
+</p><!-- l. 192 --><p class='noindent'>
 </p>
    <h4 class='subsectionHead' id='syntax-trees'><span class='titlemark'>3.5   </span> <a id='x1-130003.5'></a>Syntax trees</h4>
-<!-- l. 195 --><p class='noindent'>This is a document showing a syntax tree using the qtree package:
+<!-- l. 194 --><p class='noindent'>This is a document showing a syntax tree using the qtree package, from the  <a href='http://mirrors.ctan.org/macros/latex/contrib/qtree/qtreenotes.pdf'>qtree
+documentation</a>:
                                                                                        
                                                                                        
 </p>
@@ -243,10 +243,11 @@ in section <a href='#getting-microsoft-word-docx-output'>2.3<!-- tex4ht:ref: ms
 \usepackage{ulem}
 \begin{document}
 This is a tree.
-\Tree[.TP\qroof{Valentine}.DP\textit{\begin{scriptsize}i\end{scriptsize}}
-[.T’ [.T [.V be ] [.T -ed ]] [.VP [.V’ [.\sout{V} ][.VP
-[.\sout{DP}\textit{\begin{scriptsize}i\end{scriptsize}} ][.V’ [.V
-writing ] \qroof{a book}.DP ]]]]]]
+
+\Tree
+[.IP [ Roses ].NP_i [.I\1 [ are ].I\0
+[.VP t_i [ [ going ].V\0 \qroof{out of style}.PP ].V\1 ].VP
+].I\1 ]
 \end{document}
 </pre>
 <!-- l. 207 --><p class='nopar'> The conversion to HTML seems robust, e.g.
